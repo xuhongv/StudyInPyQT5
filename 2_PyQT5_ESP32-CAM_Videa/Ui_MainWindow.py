@@ -49,6 +49,9 @@ class Ui_MainWindow(object):
         self.bt_get_pic = QtWidgets.QPushButton(self.groupBox)
         self.bt_get_pic.setObjectName("bt_get_pic")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.SpanningRole, self.bt_get_pic)
+        self.textBrowser = QtWidgets.QTextBrowser(self.groupBox)
+        self.textBrowser.setObjectName("textBrowser")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.SpanningRole, self.textBrowser)
         self.verticalLayout_2.addLayout(self.formLayout)
         self.horizontalLayout.addWidget(self.groupBox)
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -67,12 +70,27 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "ESP32摄像头PC端软件_V1.0_半颗心脏"))
         self.groupBox.setTitle(_translate("MainWindow", "面板"))
         self.label_2.setText(_translate("MainWindow", "串口："))
         self.label_3.setText(_translate("MainWindow", "波特率："))
         self.label_5.setText(_translate("MainWindow", "115200"))
         self.bt_open.setText(_translate("MainWindow", "打开串口"))
         self.bt_get_pic.setText(_translate("MainWindow", "获取图片"))
+        self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">作者声明</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">本作品由CSDN博主半颗心脏一人编程所作，仅仅适合学习交流，如商业用途时发生的意外所造成损失，本人一概不负责。</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">设备端和本软件源码获取：关注作者的微信公众号 <span style=\" font-size:11pt; font-weight:600;\">徐宏blog </span><span style=\" font-size:10pt;\">，发送</span><span style=\" font-size:11pt; font-weight:600;\"> 210507</span><span style=\" font-size:10pt;\"> 以获取源码。</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#0000ff;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">QQ交流群：</span><span style=\" font-size:10pt; font-weight:600;\">434878850</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
+"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">2021.5.7</span></p></body></html>"))
         self.label.setText(_translate("MainWindow", "TextLabel"))
 from widget.MyQComBox import MyQComBox
